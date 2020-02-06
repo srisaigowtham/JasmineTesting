@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<head>
+    <title>
+        Simple Jasmine test
+    </title>
+
+    <link rel="shortcut icon" type="image/png" href="lib/jasmine-3.5.0/jasmine_favicon.png">
+    <link rel="stylesheet" href="lib/jasmine-3.5.0/jasmine.css">
+  
+    <script src="lib/jasmine-3.5.0/jasmine.js"></script>
+    <script src="lib/jasmine-3.5.0/jasmine-html.js"></script>
+    <script src="lib/jasmine-3.5.0/boot.js"></script>
+
+    <script src="test1spec.js"></script>
+</head>
+
+<body>
+    <script>
+        function sayHello() {
+            alert("Hello " + document.getElementById("firstName").value);
+        }
+    </script>
+
+    <form>
+        <input type="text" id="firstName" name="firstName" placeholder="Enter name">
+
+        <button type="button" onclick="sayHello()"> Say Hello! </button>
+    </form>
+</body>
